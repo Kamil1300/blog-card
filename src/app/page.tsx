@@ -10,11 +10,13 @@ interface pageProps {
 
 const page: FC<pageProps> = ({ }) => {
   return (
-    <div className=''>
-      <ModeToggle />
+    <div className='lg:m-10 m-3'>
+      <div className="lg:mx-20 mx-8">
+      <ModeToggle/>
+      </div>
 
       <div className='flex items-center flex-wrap justify-center m-8 gap-6'>
-        <CardDemo />
+        <CardDemo className='card-effect fade-in'/>
       </div>
 
     </div>

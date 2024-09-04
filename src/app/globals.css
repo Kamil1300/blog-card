@@ -50,6 +50,7 @@
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
@@ -82,7 +83,44 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  } 
+
+  .card-effect {
+    filter: drop-shadow(0 0 0.75rem rgb(182, 182, 182));
+  }
+  
+  .dark .card-effect {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 16px 0px inset, rgba(255, 255, 255, 0.05) 0px 8px 32px 0px;
+    filter: drop-shadow(0 0 0.75rem rgb(39, 39, 39));
+  }
+  
+  .card-effect:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px 0px, rgba(0, 0, 0, 0.09) 0px 4px 2px 0px, rgba(0, 0, 0, 0.09) 0px 8px 4px 0px, rgba(0, 0, 0, 0.09) 0px 16px 8px 0px, rgba(0, 0, 0, 0.09) 0px 32px 16px 0px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Dark mode specific styles */
+  .dark .card-effect:hover {
+    filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.5));
+  }
+
 }

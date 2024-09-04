@@ -1,5 +1,5 @@
-import { BellIcon, CheckIcon } from "@radix-ui/react-icons"
-
+"use client"
+import React, { useState } from 'react'
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import {
@@ -64,27 +64,51 @@ const data = [
   },
 ]
 
+
 type CardProps = React.ComponentProps<typeof Card>
 
 export function CardDemo({ className, ...props }: CardProps) {
-  return (
-    data.map((i) => {
-      return (
-        <Card key={i.id} className={cn("w-[380px]", className)} {...props}>
-          <CardHeader>
-            <CardTitle>{i.title}</CardTitle>
-          </CardHeader>
-          <CardContent className="grid gap-4">
+  // State to track expanded status of each card
+  const [expandedCards, setExpandedCards] = useState<Set<number>>(new Set())
 
-            <CardDescription>{i.description}</CardDescription>
-          </CardContent>
-          <CardFooter>
-            <Button className="w-full">
-               Show more
-            </Button>
-          </CardFooter>
-        </Card>
-      )
+  // Toggle the expanded state of a card
+  const handleToggle = (id: number) => {
+    setExpandedCards(prev => {
+      const newExpandedCards = new Set(prev)
+      if (newExpandedCards.has(id)) {
+        newExpandedCards.delete(id)
+      } else {
+        newExpandedCards.add(id)
+      }
+      return newExpandedCards
     })
+  }
+
+  return (
+    <>
+      {data.map((i) => {
+        const isExpanded = expandedCards.has(i.id)
+        return (
+          <Card key={i.id} className={cn("w-[380px]", className)} {...props}>
+            <CardHeader>
+              <CardTitle>{i.title}</CardTitle>
+            </CardHeader>
+            <CardContent className="grid gap-4">
+              <CardDescription>
+                {isExpanded
+                  ? i.description
+                  : `${i.description.substring(0, 300)}...` // Truncate the description if not expanded
+                }
+              </CardDescription>
+            </CardContent>
+            <CardFooter>
+              <Button className="w-full" onClick={() => handleToggle(i.id)}>
+                {isExpanded ? 'Show Less' : 'Show More'}
+              </Button>
+            </CardFooter>
+          </Card>
+        )
+      })}
+    </>
   )
 }
