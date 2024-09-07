@@ -7,7 +7,7 @@ export const intializeDatabase = async () => {
         filename: './blog.db',
         driver: sqlite3.Database,
     })
-    await db.exec(`CREATE TABLE IF NOT EXIST blogs(
+    await db.exec(`CREATE TABLE IF NOT EXISTS blogs(
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         title TEXT NOT NULL,
         content TEXT NOT NULL,

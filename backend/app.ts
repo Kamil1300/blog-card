@@ -1,10 +1,19 @@
 import express, { Application } from 'express';
 import blogRoutes from './routes/blog';
+import cors from 'cors'
 
 const app: Application = express();
 const PORT: number = Number(process.env.PORT) || 3001;
 
 app.use(express.json());
+
+app.use(cors({
+    origin: 'http://localhost:3000'
+}))
+
+app.get('/',(req,res) => {
+    res.send('Welcome to the Express Backend!')
+})
 
 // Use the blog routes for handling API requests related to blogs
 app.use('/api/blogs', blogRoutes);

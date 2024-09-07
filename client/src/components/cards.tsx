@@ -32,36 +32,36 @@ const data = [
     title: "Company 4",
     description: "Notifications Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit porro dicta, ipsum eligendi ipsam praesentium, magnam quaerat repellat aliquid voluptatem rem eos numquam quasi laborum voluptate cumque molestiae suscipit, quidem beatae culpa at ad consequatur. Consequatur laborum illum necessitatibus, molestiae, nisi minus numquam eveniet, eaque enim inventore ut nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perferendis maxime cupiditate illum voluptatem aliquid quasi sit temporibus culpa? Illo dolor hic nisi quidem ab quae illum accusantium vitae autem ullam! Sequi corporis exercitationem dolore, ab molestiae voluptates labore. Rem non cum doloribus explicabo itaque dolore incidunt esse reiciendis nesciunt?",
   },
-  {
-    id: 5,
-    title: "Company 5",
-    description: "Notifications Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit porro dicta, ipsum eligendi ipsam praesentium, magnam quaerat repellat aliquid voluptatem rem eos numquam quasi laborum voluptate cumque molestiae suscipit, quidem beatae culpa at ad consequatur. Consequatur laborum illum necessitatibus, molestiae, nisi minus numquam eveniet, eaque enim inventore ut nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perferendis maxime cupiditate illum voluptatem aliquid quasi sit temporibus culpa? Illo dolor hic nisi quidem ab quae illum accusantium vitae autem ullam! Sequi corporis exercitationem dolore, ab molestiae voluptates labore. Rem non cum doloribus explicabo itaque dolore incidunt esse reiciendis nesciunt?",
-  },
-  {
-    id: 6,
-    title: "Company 6",
-    description: "Notifications Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit porro dicta, ipsum eligendi ipsam praesentium, magnam quaerat repellat aliquid voluptatem rem eos numquam quasi laborum voluptate cumque molestiae suscipit, quidem beatae culpa at ad consequatur. Consequatur laborum illum necessitatibus, molestiae, nisi minus numquam eveniet, eaque enim inventore ut nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perferendis maxime cupiditate illum voluptatem aliquid quasi sit temporibus culpa? Illo dolor hic nisi quidem ab quae illum accusantium vitae autem ullam! Sequi corporis exercitationem dolore, ab molestiae voluptates labore. Rem non cum doloribus explicabo itaque dolore incidunt esse reiciendis nesciunt?",
-  },
-  {
-    id: 7,
-    title: "Company 7",
-    description: "Notifications Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit porro dicta, ipsum eligendi ipsam praesentium, magnam quaerat repellat aliquid voluptatem rem eos numquam quasi laborum voluptate cumque molestiae suscipit, quidem beatae culpa at ad consequatur. Consequatur laborum illum necessitatibus, molestiae, nisi minus numquam eveniet, eaque enim inventore ut nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perferendis maxime cupiditate illum voluptatem aliquid quasi sit temporibus culpa? Illo dolor hic nisi quidem ab quae illum accusantium vitae autem ullam! Sequi corporis exercitationem dolore, ab molestiae voluptates labore. Rem non cum doloribus explicabo itaque dolore incidunt esse reiciendis nesciunt?",
-  },
-  {
-    id: 8,
-    title: "Company 8",
-    description: "Notifications Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit porro dicta, ipsum eligendi ipsam praesentium, magnam quaerat repellat aliquid voluptatem rem eos numquam quasi laborum voluptate cumque molestiae suscipit, quidem beatae culpa at ad consequatur. Consequatur laborum illum necessitatibus, molestiae, nisi minus numquam eveniet, eaque enim inventore ut nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perferendis maxime cupiditate illum voluptatem aliquid quasi sit temporibus culpa? Illo dolor hic nisi quidem ab quae illum accusantium vitae autem ullam! Sequi corporis exercitationem dolore, ab molestiae voluptates labore. Rem non cum doloribus explicabo itaque dolore incidunt esse reiciendis nesciunt?",
-  },
-  {
-    id: 9,
-    title: "Company 9",
-    description: "Notifications Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit porro dicta, ipsum eligendi ipsam praesentium, magnam quaerat repellat aliquid voluptatem rem eos numquam quasi laborum voluptate cumque molestiae suscipit, quidem beatae culpa at ad consequatur. Consequatur laborum illum necessitatibus, molestiae, nisi minus numquam eveniet, eaque enim inventore ut nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perferendis maxime cupiditate illum voluptatem aliquid quasi sit temporibus culpa? Illo dolor hic nisi quidem ab quae illum accusantium vitae autem ullam! Sequi corporis exercitationem dolore, ab molestiae voluptates labore. Rem non cum doloribus explicabo itaque dolore incidunt esse reiciendis nesciunt?",
-  },
-  {
-    id: 10,
-    title: "Company 10",
-    description: "Notifications Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit porro dicta, ipsum eligendi ipsam praesentium, magnam quaerat repellat aliquid voluptatem rem eos numquam quasi laborum voluptate cumque molestiae suscipit, quidem beatae culpa at ad consequatur. Consequatur laborum illum necessitatibus, molestiae, nisi minus numquam eveniet, eaque enim inventore ut nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perferendis maxime cupiditate illum voluptatem aliquid quasi sit temporibus culpa? Illo dolor hic nisi quidem ab quae illum accusantium vitae autem ullam! Sequi corporis exercitationem dolore, ab molestiae voluptates labore. Rem non cum doloribus explicabo itaque dolore incidunt esse reiciendis nesciunt?",
-  },
+  // {
+  //   id: 5,
+  //   title: "Company 5",
+  //   description: "Notifications Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit porro dicta, ipsum eligendi ipsam praesentium, magnam quaerat repellat aliquid voluptatem rem eos numquam quasi laborum voluptate cumque molestiae suscipit, quidem beatae culpa at ad consequatur. Consequatur laborum illum necessitatibus, molestiae, nisi minus numquam eveniet, eaque enim inventore ut nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perferendis maxime cupiditate illum voluptatem aliquid quasi sit temporibus culpa? Illo dolor hic nisi quidem ab quae illum accusantium vitae autem ullam! Sequi corporis exercitationem dolore, ab molestiae voluptates labore. Rem non cum doloribus explicabo itaque dolore incidunt esse reiciendis nesciunt?",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Company 6",
+  //   description: "Notifications Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit porro dicta, ipsum eligendi ipsam praesentium, magnam quaerat repellat aliquid voluptatem rem eos numquam quasi laborum voluptate cumque molestiae suscipit, quidem beatae culpa at ad consequatur. Consequatur laborum illum necessitatibus, molestiae, nisi minus numquam eveniet, eaque enim inventore ut nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perferendis maxime cupiditate illum voluptatem aliquid quasi sit temporibus culpa? Illo dolor hic nisi quidem ab quae illum accusantium vitae autem ullam! Sequi corporis exercitationem dolore, ab molestiae voluptates labore. Rem non cum doloribus explicabo itaque dolore incidunt esse reiciendis nesciunt?",
+  // },
+  // {
+  //   id: 7,
+  //   title: "Company 7",
+  //   description: "Notifications Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit porro dicta, ipsum eligendi ipsam praesentium, magnam quaerat repellat aliquid voluptatem rem eos numquam quasi laborum voluptate cumque molestiae suscipit, quidem beatae culpa at ad consequatur. Consequatur laborum illum necessitatibus, molestiae, nisi minus numquam eveniet, eaque enim inventore ut nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perferendis maxime cupiditate illum voluptatem aliquid quasi sit temporibus culpa? Illo dolor hic nisi quidem ab quae illum accusantium vitae autem ullam! Sequi corporis exercitationem dolore, ab molestiae voluptates labore. Rem non cum doloribus explicabo itaque dolore incidunt esse reiciendis nesciunt?",
+  // },
+  // {
+  //   id: 8,
+  //   title: "Company 8",
+  //   description: "Notifications Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit porro dicta, ipsum eligendi ipsam praesentium, magnam quaerat repellat aliquid voluptatem rem eos numquam quasi laborum voluptate cumque molestiae suscipit, quidem beatae culpa at ad consequatur. Consequatur laborum illum necessitatibus, molestiae, nisi minus numquam eveniet, eaque enim inventore ut nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perferendis maxime cupiditate illum voluptatem aliquid quasi sit temporibus culpa? Illo dolor hic nisi quidem ab quae illum accusantium vitae autem ullam! Sequi corporis exercitationem dolore, ab molestiae voluptates labore. Rem non cum doloribus explicabo itaque dolore incidunt esse reiciendis nesciunt?",
+  // },
+  // {
+  //   id: 9,
+  //   title: "Company 9",
+  //   description: "Notifications Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit porro dicta, ipsum eligendi ipsam praesentium, magnam quaerat repellat aliquid voluptatem rem eos numquam quasi laborum voluptate cumque molestiae suscipit, quidem beatae culpa at ad consequatur. Consequatur laborum illum necessitatibus, molestiae, nisi minus numquam eveniet, eaque enim inventore ut nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perferendis maxime cupiditate illum voluptatem aliquid quasi sit temporibus culpa? Illo dolor hic nisi quidem ab quae illum accusantium vitae autem ullam! Sequi corporis exercitationem dolore, ab molestiae voluptates labore. Rem non cum doloribus explicabo itaque dolore incidunt esse reiciendis nesciunt?",
+  // },
+  // {
+  //   id: 10,
+  //   title: "Company 10",
+  //   description: "Notifications Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit porro dicta, ipsum eligendi ipsam praesentium, magnam quaerat repellat aliquid voluptatem rem eos numquam quasi laborum voluptate cumque molestiae suscipit, quidem beatae culpa at ad consequatur. Consequatur laborum illum necessitatibus, molestiae, nisi minus numquam eveniet, eaque enim inventore ut nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perferendis maxime cupiditate illum voluptatem aliquid quasi sit temporibus culpa? Illo dolor hic nisi quidem ab quae illum accusantium vitae autem ullam! Sequi corporis exercitationem dolore, ab molestiae voluptates labore. Rem non cum doloribus explicabo itaque dolore incidunt esse reiciendis nesciunt?",
+  // },
 ]
 
 
