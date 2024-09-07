@@ -4,7 +4,6 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import {useState} from 'react'
 import axios from "axios"
-import { error } from "console"
 
 export function InputWithButton() {
   const [title,setTitle] = useState('')
@@ -33,7 +32,7 @@ export function InputWithButton() {
     }
 
     try {
-      const response = await axios.post('http://localhost:3001/api/blogs',{
+      const response = await axios.post('http://localhost:3001/posts',{
         title,
         content
       })

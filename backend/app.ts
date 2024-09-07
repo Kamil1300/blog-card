@@ -16,7 +16,7 @@ app.get('/',(req,res) => {
 })
 
 // Use the blog routes for handling API requests related to blogs
-app.use('/api/blogs', blogRoutes);
+app.use('/posts', blogRoutes);
 
 // Start the server and handle any potential errors
 app.listen(PORT, () => {

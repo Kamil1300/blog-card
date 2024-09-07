@@ -32,23 +32,42 @@ router.get('/',async(req:Request,res:Response)=>{
     }
 })
 
-router.put('/:id',async(req:Request,res:Response)=>{
-    const {id} = req.params
-    const {title,content}: Blog = req.body
-    const db = await intializeDatabase()
+router.get('/:id', async (req: Request, res: Response) => {
+    const db = await intializeDatabase();
+    const { id } = req.params; // Extract the id from request parameters
 
     try {
-        const result: SQLiteRunResult = await db.run('UPDATE blogs SET title = ?, content = ? WHERE id = ?',[title,content,id])
-
-        if(result.changes && result.changes > 0){
-            res.json({title,content,id})
+        // Query to select a blog post by its id
+        const blog: Blog | undefined = await db.get('SELECT * FROM blogs WHERE id = ?', [id]);
+        
+        if (blog) {
+            res.json(blog);
         } else {
-            res.status(404).json({error:"Blog post not found"})
+            res.status(404).json({ error: 'Blog post not found' });
         }
     } catch (error) {
-        res.status(500).json({error: 'Failed to update blog post'})
+        res.status(500).json({ error: 'Failed to retrieve blog post' });
     }
-})
+});
+
+
+// router.put('/:id',async(req:Request,res:Response)=>{
+//     const {id} = req.params
+//     const {title,content}: Blog = req.body
+//     const db = await intializeDatabase()
+
+//     try {
+//         const result: SQLiteRunResult = await db.run('UPDATE blogs SET title = ?, content = ? WHERE id = ?',[title,content,id])
+
+//         if(result.changes && result.changes > 0){
+//             res.json({title,content,id})
+//         } else {
+//             res.status(404).json({error:"Blog post not found"})
+//         }
+//     } catch (error) {
+//         res.status(500).json({error: 'Failed to update blog post'})
+//     }
+// })
 
 router.delete('/:id',async(req:Request, res: Response)=> {
     const {id} = req.params
