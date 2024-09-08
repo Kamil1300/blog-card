@@ -12,7 +12,7 @@ export function InputWithButton() {
   const [content, setContent] = useState('');
   const [errors, setErrors] = useState<{ title?: string; content?: string }>({});
   const router = useRouter();
-  const searchParams : ReadonlyURLSearchParams | null = useSearchParams();
+  const searchParams : any = useSearchParams();
 
   useEffect(() => {
     const postId = searchParams.get('id');
@@ -73,9 +73,9 @@ export function InputWithButton() {
 
   return (
     <div className="flex flex-col gap-5 w-full max-w-sm items-center space-x-2">
-      <Input type="text" placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)} required />
+      <Input className="dark:border-slate-400" type="text" placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)} required />
       {errors.title && <p className="text-red-500">{errors.title}</p>}
-      <Textarea placeholder="Write here" value={content} onChange={(e) => setContent(e.target.value)} required />
+      <Textarea className="dark:border-slate-400" placeholder="Write here" value={content} onChange={(e) => setContent(e.target.value)} required />
       {errors.content && <p className="text-red-500">{errors.content}</p>}
       <Button type="submit" onClick={handlePost}>{searchParams.get('id') ? 'Update' : 'Add'}</Button>
     </div>

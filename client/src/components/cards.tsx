@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/card"
 import axios from 'axios'
 import { useRouter } from 'next/navigation'
-import { ConfirmationModal } from './ConfirmationModal'
+import { ConfirmationModal } from '@/components/confirmationModal'
 
 const manualPosts = [
   {
@@ -125,7 +125,7 @@ export function CardDemo({ className, ...props }: CardProps) {
               </CardDescription>
             </CardContent>
             <CardFooter>
-              <Button className="w-full mx-2 hover:bg-gray-600" onClick={() => handleShowMore(i.id)}
+              <Button className="w-full mx-2 hover:bg-gray-600 dark:hover:bg-gray-300" onClick={() => handleShowMore(i.id)}
               >
                 Show More
               </Button>
