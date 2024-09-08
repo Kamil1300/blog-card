@@ -15,7 +15,7 @@ const navItems: NavItem[] = [
 export const Header: React.FC = () => { 
   return (
     <header className="bg-black p-4 shadow-md">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex flex-wrap justify-between items-center">
         <h1 className="text-white text-2xl font-bold">
           <Link href="/home">My Blog</Link>
         </h1>
