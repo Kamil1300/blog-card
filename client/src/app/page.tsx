@@ -2,10 +2,13 @@
 import { Header } from '@/components/header';
 import '@/app/globals.css'
 
-interface child {
-  children : React.ReactNode    
+interface PageProps  {
+  children: React.ReactNode
+  params?: any;
+  searchParams?: any;
 }
-export default function Page({ children } : child) {
+
+export default function Page({ children }: PageProps) {
   return (
     <div>
       {/* Global Header */}
