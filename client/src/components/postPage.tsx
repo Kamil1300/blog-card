@@ -26,7 +26,7 @@ const PostPage = ({ post }: { post: { id: string, title: string, content: string
   const handleDelete = async () => {
     try {
       await axios.delete(`http://localhost:3001/posts/${post.id}`);
-      router.push('/');
+      router.push('/home');
     } catch (error) {
       console.error('Error deleting post:', error);
     }

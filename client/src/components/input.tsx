@@ -61,11 +61,11 @@ export function InputWithButton() {
           title,
           content
         });
+        router.push('/home');
       }
 
       setTitle('');
       setContent('');
-      router.push('/home');
     } catch (error) {
       console.error("Error saving blog post:", error);
     }
@@ -77,7 +77,7 @@ export function InputWithButton() {
       {errors.title && <p className="text-red-500">{errors.title}</p>}
       <Textarea className="dark:border-slate-400" placeholder="Write here" value={content} onChange={(e) => setContent(e.target.value)} required />
       {errors.content && <p className="text-red-500">{errors.content}</p>}
-      <Button type="submit" onClick={handlePost}>{searchParams.get('id') ? 'Update' : 'Add'}</Button>
+      <Button onClick={handlePost}>{searchParams.get('id') ? 'Update' : 'Add'}</Button>
     </div>
   );
 }
